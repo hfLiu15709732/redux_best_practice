@@ -5,7 +5,7 @@ export interface MovieState {
 	userList: Array<object>;
 }
 const initialState: MovieState = {
-	list: [],
+	value: 100,
 	userList: [
 		{
 			title: "张明明",
@@ -19,7 +19,6 @@ const initialState: MovieState = {
 	],
 };
 
-// 请求电影列表
 const getUserListApi = () =>
 	fetch(
 		"https://mock.presstime.cn/mock/653695baffb279f23e01cefb/remoteUser"
